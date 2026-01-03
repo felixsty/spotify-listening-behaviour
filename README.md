@@ -1,63 +1,81 @@
 # Spotify Listening Behaviour Analytics (Tableau)
 
 ## Overview
-This project analyzes personal Spotify Extended Streaming History data (2025) using Tableau for data visualization and insight generation.
-
-The focus is on understanding listening behaviour, time-based patterns, artist and track preferences, and overall engagement trends throughout the year.
+This project analyzes personal Spotify Extended Streaming History data (2025) using **Tableau** for data preparation, analysis, and visualization.  
+The focus is on understanding listening behaviour, time-based engagement patterns, and artist and track preferences across the year.
 
 ---
 
 ## Dataset
-- Source: Spotify Extended Streaming History (personal account)
-- Time period: 2025
 
-### Columns
-- `ts` — Timestamp of each streaming event  
-- `artist_name` — Name of the artist  
-- `track_name` — Name of the track  
-- `ms_played` — Duration played in milliseconds  
-- `platform` — Device or platform used  
-- `reason_start` — Playback start reason  
-- `reason_end` — Playback end reason  
-
-### Data Files
+- Source: Spotify Extended Streaming History (personal account).
+- Time period: 2025.
+- Columns:
+  - `ts` – Timestamp of each streaming event
+  - `artist_name` – Name of the artist
+  - `track_name` – Name of the track
+  - `ms_played` – Duration played in milliseconds
+  - `platform` – Device or platform used
+  - `reason_start` – Playback start reason
+  - `reason_end` – Playback end reason
 - Raw dataset: `spotify_extended_history_2025.csv`
 
 ---
 
-## Data Preparation
+## Data Preparation (Tableau)
+
 All data preparation was performed within Tableau, including:
-- Converting timestamps to date and time fields  
-- Creating calculated fields for listening duration and play counts  
-- Extracting hour, day, and month for time-based aggregation  
-- Handling incomplete or zero-duration plays  
+
+- Converting timestamps to **date** and **time** fields.
+- Creating calculated fields for listening duration and play counts.
+- Extracting hour, day, and month fields for time-based aggregation.
+- Handling incomplete and zero-duration streaming records.
 
 ---
 
 ## Analysis
-- Listening patterns analyzed across hours, days, and months  
-- Identification of peak listening periods and behavioural trends  
-- Ranking of top artists and tracks by engagement metrics  
-- All insights presented through an interactive Tableau dashboard  
+
+- Analysis focused on **listening patterns, engagement trends, and content preferences**.
+- Time-series analysis was used to identify peak listening hours and seasonal trends.
+- Artist and track rankings were created based on listening duration and frequency.
+- All analysis outputs are presented through an interactive Tableau dashboard.
 
 ---
 
 ## Visualization
-- Interactive dashboard built in Tableau  
-- Includes filters for time period, artist, and track  
-- Designed to support exploratory analysis and insight discovery  
 
-🔗 **View the interactive dashboard on Tableau Public**  
-*(insert link here)*
+- Interactive dashboard built using Tableau.
+- Includes filters for time period, artist, and track.
+- Designed to support exploratory analysis and insight discovery.
+
+🔗 **Tableau Public dashboard:** *(insert link here)*
 
 ---
 
 ## Skills Demonstrated
-- **Tableau** — Interactive dashboards, calculated fields, and filters  
-- **Data analysis** — Behavioural pattern identification and aggregation  
-- **Time-series analysis** — Hourly, daily, and monthly trends  
-- **Data visualisation** — Clear storytelling through dashboards  
+
+- Tableau: interactive dashboards, calculated fields, and filters
+- Data analysis: behavioural pattern identification and aggregation
+- Time-series analysis: hourly, daily, and monthly trends
+- Data visualization: clear insight storytelling through dashboards
 
 ---
 
 ## Project Structure
+
+```
+spotify-listening-behaviour/
+│
+├── Spotify_2025_Dashboard.twbx              # Tableau packaged workbook
+├── spotify_extended_history_2025.csv        # Dataset
+|
+├── images/
+│   └── dashboard_overview.png               # Dashboard preview
+|
+└── README.md                                # Project background and overview
+```
+
+---
+
+This repo demonstrates a **complete analytics workflow**:  
+**data extraction → data preparation → analysis → data visualization**
